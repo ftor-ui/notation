@@ -87,7 +87,7 @@ void printNotation(unsigned short int notation, char* argv[])
 
 int main(int argc, char* argv[])
 {
-    unsigned short int notation; // remove trash
+    unsigned short int notation;
     if(argc < 3)
     {
         printf("Use the: notation [notation] [dec_number]");
