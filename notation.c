@@ -82,6 +82,7 @@ void printNotation(unsigned short int notation, char* argv[])
         printf("x%d: ", notation);
         for(int i = 0; i < count; i++)
             printf("%c", result[i]);
+        printf("\n");
     }
 }
 
