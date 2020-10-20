@@ -40,6 +40,7 @@ void printNotation(unsigned short int notation, char* argv[])
         printf("x%d: ", notation);
         for(int i = 0; i < count; i++)
             printf("%c", argv[2][i]);
+        printf("\n");
     }
 
     else // it's so bad that even my cat died
@@ -91,13 +92,13 @@ int main(int argc, char* argv[])
     unsigned short int notation;
     if(argc < 3)
     {
-        printf("Use the: notation [notation] [dec_number]");
+        printf("Use the: notation [notation] [dec_number]\n");
         return 0;
     }
     notation = getNotation(argv);
     if(notation > 1)
         printNotation(notation, argv);
     else
-        printf("Notation must be greater than 1, you entered: %d", notation);
+        printf("Notation must be greater than 1, you entered: %d\n", notation);
     return 0;
 }
