@@ -38,8 +38,8 @@ void printNotation(unsigned short int notation, char* argv[])
     if(number < notation)
     {
         printf("x%d: ", notation);
-        if(notation > 9) printf("%c", notation + 55);
-        else printf("%c", notation + 48);
+        if(notation > 9) printf("%c", number + 55);
+        else printf("%c", number + 48);
         printf("\n");
     }
 
@@ -68,7 +68,7 @@ void printNotation(unsigned short int notation, char* argv[])
             if(tmp / notation == 0) break;
             else if(tmp / notation < notation)
             {
-                if(tmp % notation > 9) result[count - 1 - i] = tmp % notation + 55; // 56 is a 48 and 8 ASCII errors
+                if(tmp % notation > 9) result[count - 1 - i] = tmp % notation + 55; // 55 is a 48 and 7 ASCII errors
                 else result[count - 1 - i] = tmp % notation + 48; // 48 is ASCII error
                 if(tmp / notation > 9) result[count - 2 - i] = tmp / notation + 55;
                 else result[count - 2 - i] = tmp / notation + 48;
