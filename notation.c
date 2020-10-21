@@ -38,7 +38,7 @@ void printNotation(unsigned short int notation, char* argv[])
     if(number < notation)
     {
         printf("x%d: ", notation);
-        if(notation > 9) printf("%c", number + 55);
+        if(number > 9) printf("%c", number + 55);
         else printf("%c", number + 48);
         printf("\n");
     }
